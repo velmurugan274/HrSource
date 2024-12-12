@@ -1,0 +1,2153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		911188A8229AF06E00BC64E3 /* CreateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911188A7229AF06E00BC64E3 /* CreateTask.swift */; };
+		911188AA229AF64F00BC64E3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911188A9229AF64F00BC64E3 /* Task.swift */; };
+		911188AC229AFCD500BC64E3 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911188AB229AFCD500BC64E3 /* TaskCell.swift */; };
+		912483F02297A4E900757F7C /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912483EF2297A4E900757F7C /* ServicesView.swift */; };
+		912483F622986C1000757F7C /* tableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912483F522986C1000757F7C /* tableAnimation.swift */; };
+		913BA68022C0E95B00444D9C /* gifExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BA67F22C0E95B00444D9C /* gifExtension.swift */; };
+		913BA68422C0ECAC00444D9C /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 913BA68322C0ECAC00444D9C /* loading.gif */; };
+		913BA68622C0FB5C00444D9C /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BA68522C0FB5C00444D9C /* Downloader.swift */; };
+		913BA68822C1D61700444D9C /* AttendancePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BA68722C1D61700444D9C /* AttendancePopup.swift */; };
+		913BA68A22C2342B00444D9C /* ShowNotificaionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BA68922C2342B00444D9C /* ShowNotificaionPresenter.swift */; };
+		913BA68C22C2343C00444D9C /* ShowNotificationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BA68B22C2343C00444D9C /* ShowNotificationInteractor.swift */; };
+		913BA68E22C2345200444D9C /* ShowNotificationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BA68D22C2345200444D9C /* ShowNotificationProtocol.swift */; };
+		913BA69022C249E200444D9C /* ShowNotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BA68F22C249E200444D9C /* ShowNotificationRouter.swift */; };
+		913BA69222C3475000444D9C /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BA69122C3475000444D9C /* TextView.swift */; };
+		913C8B0222B6B9760086A5AD /* PermissionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B0122B6B9760086A5AD /* PermissionPresenter.swift */; };
+		913C8B0422B6B9830086A5AD /* PermissionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B0322B6B9830086A5AD /* PermissionInteractor.swift */; };
+		913C8B0622B6B98F0086A5AD /* PermissionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B0522B6B98F0086A5AD /* PermissionProtocol.swift */; };
+		913C8B0822B6B99F0086A5AD /* PermissionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B0722B6B99F0086A5AD /* PermissionRouter.swift */; };
+		913C8B0F22B786A20086A5AD /* SingleTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B0E22B786A20086A5AD /* SingleTaskProtocol.swift */; };
+		913C8B1122B789030086A5AD /* SingleTaskPeresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B1022B789030086A5AD /* SingleTaskPeresenter.swift */; };
+		913C8B1322B789280086A5AD /* SingleTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B1222B789280086A5AD /* SingleTaskInteractor.swift */; };
+		913C8B1522B789380086A5AD /* SingleTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B1422B789380086A5AD /* SingleTaskRouter.swift */; };
+		913C8B1722B7A24D0086A5AD /* SingleQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B1622B7A24D0086A5AD /* SingleQueryView.swift */; };
+		913C8B2522B8B7420086A5AD /* QueryMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B2422B8B7420086A5AD /* QueryMainPresenter.swift */; };
+		913C8B2722B8B7540086A5AD /* QueryMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B2622B8B7540086A5AD /* QueryMainInteractor.swift */; };
+		913C8B2922B8B7620086A5AD /* QueryMainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B2822B8B7620086A5AD /* QueryMainProtocol.swift */; };
+		913C8B2B22B8B78D0086A5AD /* QueryMainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B2A22B8B78D0086A5AD /* QueryMainRouter.swift */; };
+		913C8B3522B8FBBC0086A5AD /* CreateQueryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B3422B8FBBC0086A5AD /* CreateQueryPresenter.swift */; };
+		913C8B3722B8FBCC0086A5AD /* CreateQueryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B3622B8FBCC0086A5AD /* CreateQueryInteractor.swift */; };
+		913C8B3922B8FBDA0086A5AD /* CreateQueryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B3822B8FBDA0086A5AD /* CreateQueryProtocol.swift */; };
+		913C8B3B22B8FBE90086A5AD /* CreateQueryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B3A22B8FBE90086A5AD /* CreateQueryRouter.swift */; };
+		913C8B3E22B9704D0086A5AD /* SingleQueryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B3D22B9704D0086A5AD /* SingleQueryPresenter.swift */; };
+		913C8B4122B970690086A5AD /* SingleQueryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B4022B970690086A5AD /* SingleQueryProtocol.swift */; };
+		913C8B4322B970780086A5AD /* SingleQueryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B4222B970780086A5AD /* SingleQueryInteractor.swift */; };
+		913C8B4522B970860086A5AD /* SingleQueryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B4422B970860086A5AD /* SingleQueryRouter.swift */; };
+		913C8B6722BB60C50086A5AD /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C8B6622BB60C50086A5AD /* HomeCollectionViewCell.swift */; };
+		915A8CA9229E6FC000B5E492 /* ApplyLeaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A8CA2229E6FC000B5E492 /* ApplyLeaveView.swift */; };
+		915A8CAB229E6FC000B5E492 /* LeaveTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A8CA4229E6FC000B5E492 /* LeaveTracker.swift */; };
+		915A8CB0229E6FFC00B5E492 /* PaySlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A8CAD229E6FFC00B5E492 /* PaySlipView.swift */; };
+		915A8CB1229E6FFC00B5E492 /* NotificaitonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A8CAE229E6FFC00B5E492 /* NotificaitonView.swift */; };
+		915A8CB2229E6FFC00B5E492 /* MakeAnnouncement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A8CAF229E6FFC00B5E492 /* MakeAnnouncement.swift */; };
+		915A8CB5229E701C00B5E492 /* QueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A8CB3229E701B00B5E492 /* QueryView.swift */; };
+		915A8CB6229E701C00B5E492 /* CreateQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A8CB4229E701C00B5E492 /* CreateQuery.swift */; };
+		915A8CCB229E7FCB00B5E492 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915A8CCA229E7FCB00B5E492 /* Tasks.swift */; };
+		915E14EF2293D2F20049A17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E14EE2293D2F20049A17C /* AppDelegate.swift */; };
+		915E14F12293D2F20049A17C /* HomeMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E14F02293D2F20049A17C /* HomeMain.swift */; };
+		915E14F42293D2F20049A17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915E14F22293D2F20049A17C /* Main.storyboard */; };
+		915E14F62293D2F40049A17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915E14F52293D2F40049A17C /* Assets.xcassets */; };
+		915E14F92293D2F40049A17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915E14F72293D2F40049A17C /* LaunchScreen.storyboard */; };
+		915E15012293D9DE0049A17C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E15002293D9DE0049A17C /* Extensions.swift */; };
+		915E150922940FA10049A17C /* AttendanceWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E150822940FA10049A17C /* AttendanceWeek.swift */; };
+		915E150B22941AB70049A17C /* AttendanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E150A22941AB70049A17C /* AttendanceCell.swift */; };
+		915E150E22941AE50049A17C /* AttendanceDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E150D22941AE50049A17C /* AttendanceDay.swift */; };
+		915E1511229501960049A17C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E1510229501960049A17C /* Profile.swift */; };
+		915E1513229517A70049A17C /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E1512229517A70049A17C /* ProfileCell.swift */; };
+		915E151522951DF20049A17C /* employeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E151422951DF20049A17C /* employeeList.swift */; };
+		915E151822956E150049A17C /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E151722956E150049A17C /* People.swift */; };
+		915E151B22965B8C0049A17C /* iconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E151A22965B8B0049A17C /* iconsView.swift */; };
+		918E2B2E22B12AFA00688B05 /* AttendanceDayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E2B2D22B12AFA00688B05 /* AttendanceDayPresenter.swift */; };
+		918E2B3022B12B3A00688B05 /* AttendanceDayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E2B2F22B12B3A00688B05 /* AttendanceDayInteractor.swift */; };
+		918E2B3222B12B4B00688B05 /* AttendanceDayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E2B3122B12B4B00688B05 /* AttendanceDayProtocol.swift */; };
+		918E2B3522B1306800688B05 /* AttendanceDayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E2B3422B1306800688B05 /* AttendanceDayRouter.swift */; };
+		918E2B3722B357DC00688B05 /* SingleTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918E2B3622B357DC00688B05 /* SingleTaskView.swift */; };
+		91D2470E22A923C400FDB7CA /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2470D22A923C400FDB7CA /* Holiday.swift */; };
+		91D2471622AA70D800FDB7CA /* HolidayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2471522AA70D800FDB7CA /* HolidayProtocol.swift */; };
+		91D2471822AA728F00FDB7CA /* HolidayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2471722AA728F00FDB7CA /* HolidayPresenter.swift */; };
+		91D2471A22AA72A000FDB7CA /* HolidayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2471922AA72A000FDB7CA /* HolidayInteractor.swift */; };
+		91D2471C22AA72AA00FDB7CA /* HolidayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2471B22AA72AA00FDB7CA /* HolidayRouter.swift */; };
+		91D2472522AB6C2500FDB7CA /* TaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2472422AB6C2500FDB7CA /* TaskPresenter.swift */; };
+		91D2472722AB6CC600FDB7CA /* TaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2472622AB6CC600FDB7CA /* TaskInteractor.swift */; };
+		91D2472922AB6CD300FDB7CA /* TaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2472822AB6CD300FDB7CA /* TaskRouter.swift */; };
+		91D2472B22AB6CE500FDB7CA /* TaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2472A22AB6CE500FDB7CA /* TaskProtocol.swift */; };
+		91D2473622AE1BEA00FDB7CA /* ServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2473522AE1BEA00FDB7CA /* ServicesProtocol.swift */; };
+		91D2473822AE1BF900FDB7CA /* ServicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2473722AE1BF900FDB7CA /* ServicesPresenter.swift */; };
+		91D2473A22AE1C0A00FDB7CA /* Services Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2473922AE1C0A00FDB7CA /* Services Router.swift */; };
+		91D2473E22AE223600FDB7CA /* DateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2473D22AE223600FDB7CA /* DateController.swift */; };
+		91D2474A22AE22D200FDB7CA /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2474922AE22D200FDB7CA /* ActivityIndicator.swift */; };
+		91D2474C22AE22F200FDB7CA /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2474B22AE22F100FDB7CA /* RatingControl.swift */; };
+		91D2474E22AE230D00FDB7CA /* FeedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2474D22AE230D00FDB7CA /* FeedBackView.swift */; };
+		91D2475122AE23A200FDB7CA /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2475022AE23A200FDB7CA /* FilesView.swift */; };
+		91D2475322AE23C100FDB7CA /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2475222AE23C100FDB7CA /* PermissionView.swift */; };
+		91D2475522AE23D500FDB7CA /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2475422AE23D500FDB7CA /* DownloadCell.swift */; };
+		91D2475722AE258400FDB7CA /* PerformanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2475622AE258400FDB7CA /* PerformanceCell.swift */; };
+		91D2475922AE54C400FDB7CA /* PreformanceMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2475822AE54C400FDB7CA /* PreformanceMain.swift */; };
+		91D2476122AE844600FDB7CA /* PerformanceMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2476022AE844600FDB7CA /* PerformanceMainPresenter.swift */; };
+		91D2476322AE845900FDB7CA /* PerformanceMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2476222AE845900FDB7CA /* PerformanceMainInteractor.swift */; };
+		91D2476522AE849F00FDB7CA /* PerformanceMainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2476422AE849F00FDB7CA /* PerformanceMainProtocol.swift */; };
+		91D2476722AE84B200FDB7CA /* PerformanceMainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2476622AE84B200FDB7CA /* PerformanceMainRouter.swift */; };
+		91D2476E22AF794900FDB7CA /* MakeAnnouncmentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2476D22AF794900FDB7CA /* MakeAnnouncmentPresenter.swift */; };
+		91D2477022AF795E00FDB7CA /* MakeAnnouncementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2476F22AF795E00FDB7CA /* MakeAnnouncementInteractor.swift */; };
+		91D2477222AF797100FDB7CA /* MakeAnnouncementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2477122AF797100FDB7CA /* MakeAnnouncementProtocol.swift */; };
+		91D2477422AF798000FDB7CA /* MakeAnnouncementRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2477322AF798000FDB7CA /* MakeAnnouncementRouter.swift */; };
+		91D2477C22AFA48000FDB7CA /* NotificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2477B22AFA48000FDB7CA /* NotificationPresenter.swift */; };
+		91D2477E22AFA4AA00FDB7CA /* NotificationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2477D22AFA4AA00FDB7CA /* NotificationInteractor.swift */; };
+		91D2478022AFA4BD00FDB7CA /* NotificationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2477F22AFA4BD00FDB7CA /* NotificationProtocol.swift */; };
+		91D2478222AFA7EC00FDB7CA /* NotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2478122AFA7EC00FDB7CA /* NotificationRouter.swift */; };
+		91D2478422AFBCD600FDB7CA /* ShowNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2478322AFBCD600FDB7CA /* ShowNotification.swift */; };
+		91D2479122B0C7C300FDB7CA /* CreateTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2479022B0C7C300FDB7CA /* CreateTaskRouter.swift */; };
+		91D2479322B0C7D300FDB7CA /* CreateTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2479222B0C7D300FDB7CA /* CreateTaskProtocol.swift */; };
+		91D2479522B0C7E400FDB7CA /* CreateTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2479422B0C7E400FDB7CA /* CreateTaskInteractor.swift */; };
+		91D2479722B0C7F900FDB7CA /* CreateTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2479622B0C7F900FDB7CA /* CreateTaskPresenter.swift */; };
+		91D2479B22B0CBC700FDB7CA /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2479A22B0CBC700FDB7CA /* Insurance.swift */; };
+		91D2479D22B0CBEE00FDB7CA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2479C22B0CBEE00FDB7CA /* LoginView.swift */; };
+		91D247A122B0CC1200FDB7CA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D247A022B0CC1200FDB7CA /* LoginPresenter.swift */; };
+		91D247A322B0CC1E00FDB7CA /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D247A222B0CC1E00FDB7CA /* LoginProtocol.swift */; };
+		91D247A522B0CC2C00FDB7CA /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D247A422B0CC2C00FDB7CA /* LoginRouter.swift */; };
+		91D247AD22B0CCE000FDB7CA /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D247AC22B0CCE000FDB7CA /* LoginInteractor.swift */; };
+		91DFA242229E7FE8009F3F8D /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA23D229E7FE7009F3F8D /* Performance.swift */; };
+		91DFA243229E7FE8009F3F8D /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA23E229E7FE8009F3F8D /* Permission.swift */; };
+		91DFA244229E7FE8009F3F8D /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA23F229E7FE8009F3F8D /* Query.swift */; };
+		91DFA245229E7FE8009F3F8D /* QueryReplies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA240229E7FE8009F3F8D /* QueryReplies.swift */; };
+		91DFA246229E7FE8009F3F8D /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA241229E7FE8009F3F8D /* Tasks.swift */; };
+		91DFA24C229E8011009F3F8D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA247229E8011009F3F8D /* Employee.swift */; };
+		91DFA24D229E8011009F3F8D /* Leave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA248229E8011009F3F8D /* Leave.swift */; };
+		91DFA24E229E8011009F3F8D /* PaySlip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA249229E8011009F3F8D /* PaySlip.swift */; };
+		91DFA24F229E8011009F3F8D /* Notificaiton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA24A229E8011009F3F8D /* Notificaiton.swift */; };
+		91DFA250229E8011009F3F8D /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA24B229E8011009F3F8D /* Department.swift */; };
+		91DFA252229E8097009F3F8D /* PerformanceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA251229E8097009F3F8D /* PerformanceMainView.swift */; };
+		91DFA256229E80BD009F3F8D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA255229E80BD009F3F8D /* TabBarController.swift */; };
+		91DFA25D229E83BB009F3F8D /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA25C229E83BB009F3F8D /* HomeProtocol.swift */; };
+		91DFA25F229E87E4009F3F8D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA25E229E87E4009F3F8D /* HomePresenter.swift */; };
+		91DFA261229E881D009F3F8D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA260229E881D009F3F8D /* HomeInteractor.swift */; };
+		91DFA263229E88B8009F3F8D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA262229E88B8009F3F8D /* HomeRouter.swift */; };
+		91DFA278229EAC48009F3F8D /* AttendanceWeekProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA277229EAC48009F3F8D /* AttendanceWeekProtocol.swift */; };
+		91DFA27A229EAFE7009F3F8D /* AttendacneWeekInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA279229EAFE7009F3F8D /* AttendacneWeekInteractor.swift */; };
+		91DFA27C229F8B3E009F3F8D /* AttendancePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA27B229F8B3E009F3F8D /* AttendancePresenter.swift */; };
+		91DFA27E229F8B6D009F3F8D /* AttendanceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA27D229F8B6D009F3F8D /* AttendanceRouter.swift */; };
+		91DFA286229FACF7009F3F8D /* LeaveTrackerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA285229FACF7009F3F8D /* LeaveTrackerProtocol.swift */; };
+		91DFA288229FB11B009F3F8D /* LeavePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA287229FB11B009F3F8D /* LeavePresenter.swift */; };
+		91DFA28A229FB162009F3F8D /* LeaveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA289229FB162009F3F8D /* LeaveInteractor.swift */; };
+		91DFA28C229FB1B1009F3F8D /* LeaveTrackerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA28B229FB1B1009F3F8D /* LeaveTrackerRouter.swift */; };
+		91DFA294229FCC9F009F3F8D /* ApplyLeaveProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA293229FCC9F009F3F8D /* ApplyLeaveProtocol.swift */; };
+		91DFA296229FCCB9009F3F8D /* ApplyLeaveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA295229FCCB9009F3F8D /* ApplyLeaveInteractor.swift */; };
+		91DFA298229FCCCA009F3F8D /* ApplyLeavePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA297229FCCCA009F3F8D /* ApplyLeavePresenter.swift */; };
+		91DFA29A229FCCDF009F3F8D /* ApplyLeaveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA299229FCCDF009F3F8D /* ApplyLeaveRouter.swift */; };
+		91DFA2A2229FFC17009F3F8D /* performanceGiveProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2A1229FFC17009F3F8D /* performanceGiveProtocol.swift */; };
+		91DFA2A4229FFC2F009F3F8D /* performanceGivePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2A3229FFC2F009F3F8D /* performanceGivePresenter.swift */; };
+		91DFA2A6229FFC47009F3F8D /* performanceGiveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2A5229FFC47009F3F8D /* performanceGiveInteractor.swift */; };
+		91DFA2A8229FFC79009F3F8D /* performanceGiveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2A7229FFC79009F3F8D /* performanceGiveRouter.swift */; };
+		91DFA2B022A0FF67009F3F8D /* PaySlipProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2AF22A0FF67009F3F8D /* PaySlipProtocol.swift */; };
+		91DFA2B222A0FF8E009F3F8D /* PaySlipPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2B122A0FF8E009F3F8D /* PaySlipPresenter.swift */; };
+		91DFA2B422A0FF9F009F3F8D /* PaySlipInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2B322A0FF9F009F3F8D /* PaySlipInteractor.swift */; };
+		91DFA2B622A0FFC0009F3F8D /* PaySlipRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2B522A0FFC0009F3F8D /* PaySlipRouter.swift */; };
+		91DFA2B922A121F1009F3F8D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2B822A121F1009F3F8D /* Database.swift */; };
+		91DFA2BB22A12DCB009F3F8D /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2BA22A12DCB009F3F8D /* DatabaseController.swift */; };
+		91DFA2C322A19499009F3F8D /* Profile Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2C222A19499009F3F8D /* Profile Interactor.swift */; };
+		91DFA2C522A194AE009F3F8D /* Profile Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2C422A194AE009F3F8D /* Profile Presenter.swift */; };
+		91DFA2C722A1950A009F3F8D /* Profile Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2C622A1950A009F3F8D /* Profile Protocol.swift */; };
+		91DFA2C922A1951B009F3F8D /* Profile Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2C822A1951B009F3F8D /* Profile Router.swift */; };
+		91DFA2D122A28568009F3F8D /* PeopleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2D022A28568009F3F8D /* PeopleRouter.swift */; };
+		91DFA2D322A28574009F3F8D /* PeoplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2D222A28574009F3F8D /* PeoplePresenter.swift */; };
+		91DFA2D522A285A7009F3F8D /* PeopleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2D422A285A7009F3F8D /* PeopleInteractor.swift */; };
+		91DFA2D722A285B3009F3F8D /* PeopleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2D622A285B3009F3F8D /* PeopleProtocol.swift */; };
+		91DFA2E022A52EA7009F3F8D /* InsuranceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2DF22A52EA7009F3F8D /* InsuranceProtocol.swift */; };
+		91DFA2E222A6286D009F3F8D /* pdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DFA2E122A6286D009F3F8D /* pdf.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		911188A7229AF06E00BC64E3 /* CreateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTask.swift; sourceTree = "<group>"; };
+		911188A9229AF64F00BC64E3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		911188AB229AFCD500BC64E3 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		912483EF2297A4E900757F7C /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		912483F522986C1000757F7C /* tableAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableAnimation.swift; sourceTree = "<group>"; };
+		913BA67F22C0E95B00444D9C /* gifExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifExtension.swift; sourceTree = "<group>"; };
+		913BA68322C0ECAC00444D9C /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		913BA68522C0FB5C00444D9C /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		913BA68722C1D61700444D9C /* AttendancePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendancePopup.swift; sourceTree = "<group>"; };
+		913BA68922C2342B00444D9C /* ShowNotificaionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNotificaionPresenter.swift; sourceTree = "<group>"; };
+		913BA68B22C2343C00444D9C /* ShowNotificationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNotificationInteractor.swift; sourceTree = "<group>"; };
+		913BA68D22C2345200444D9C /* ShowNotificationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNotificationProtocol.swift; sourceTree = "<group>"; };
+		913BA68F22C249E200444D9C /* ShowNotificationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNotificationRouter.swift; sourceTree = "<group>"; };
+		913BA69122C3475000444D9C /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		913C8B0122B6B9760086A5AD /* PermissionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionPresenter.swift; sourceTree = "<group>"; };
+		913C8B0322B6B9830086A5AD /* PermissionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionInteractor.swift; sourceTree = "<group>"; };
+		913C8B0522B6B98F0086A5AD /* PermissionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionProtocol.swift; sourceTree = "<group>"; };
+		913C8B0722B6B99F0086A5AD /* PermissionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionRouter.swift; sourceTree = "<group>"; };
+		913C8B0E22B786A20086A5AD /* SingleTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTaskProtocol.swift; sourceTree = "<group>"; };
+		913C8B1022B789030086A5AD /* SingleTaskPeresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTaskPeresenter.swift; sourceTree = "<group>"; };
+		913C8B1222B789280086A5AD /* SingleTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTaskInteractor.swift; sourceTree = "<group>"; };
+		913C8B1422B789380086A5AD /* SingleTaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTaskRouter.swift; sourceTree = "<group>"; };
+		913C8B1622B7A24D0086A5AD /* SingleQueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQueryView.swift; sourceTree = "<group>"; };
+		913C8B2422B8B7420086A5AD /* QueryMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryMainPresenter.swift; sourceTree = "<group>"; };
+		913C8B2622B8B7540086A5AD /* QueryMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryMainInteractor.swift; sourceTree = "<group>"; };
+		913C8B2822B8B7620086A5AD /* QueryMainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryMainProtocol.swift; sourceTree = "<group>"; };
+		913C8B2A22B8B78D0086A5AD /* QueryMainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryMainRouter.swift; sourceTree = "<group>"; };
+		913C8B3422B8FBBC0086A5AD /* CreateQueryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQueryPresenter.swift; sourceTree = "<group>"; };
+		913C8B3622B8FBCC0086A5AD /* CreateQueryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQueryInteractor.swift; sourceTree = "<group>"; };
+		913C8B3822B8FBDA0086A5AD /* CreateQueryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQueryProtocol.swift; sourceTree = "<group>"; };
+		913C8B3A22B8FBE90086A5AD /* CreateQueryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQueryRouter.swift; sourceTree = "<group>"; };
+		913C8B3D22B9704D0086A5AD /* SingleQueryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQueryPresenter.swift; sourceTree = "<group>"; };
+		913C8B4022B970690086A5AD /* SingleQueryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQueryProtocol.swift; sourceTree = "<group>"; };
+		913C8B4222B970780086A5AD /* SingleQueryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQueryInteractor.swift; sourceTree = "<group>"; };
+		913C8B4422B970860086A5AD /* SingleQueryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQueryRouter.swift; sourceTree = "<group>"; };
+		913C8B6622BB60C50086A5AD /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		915A8CA2229E6FC000B5E492 /* ApplyLeaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplyLeaveView.swift; path = "HRMgmt/Apply Leave/view/ApplyLeaveView.swift"; sourceTree = SOURCE_ROOT; };
+		915A8CA4229E6FC000B5E492 /* LeaveTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeaveTracker.swift; path = HRMgmt/LeaveTracker/View/LeaveTracker.swift; sourceTree = SOURCE_ROOT; };
+		915A8CAD229E6FFC00B5E492 /* PaySlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaySlipView.swift; path = "HRMgmt/Pay Slip/view/PaySlipView.swift"; sourceTree = SOURCE_ROOT; };
+		915A8CAE229E6FFC00B5E492 /* NotificaitonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificaitonView.swift; path = "HRMgmt/Notification/Notification View/NotificaitonView.swift"; sourceTree = SOURCE_ROOT; };
+		915A8CAF229E6FFC00B5E492 /* MakeAnnouncement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeAnnouncement.swift; path = "HRMgmt/New Group/Make Announcement/Make Announcement View/MakeAnnouncement.swift"; sourceTree = SOURCE_ROOT; };
+		915A8CB3229E701B00B5E492 /* QueryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueryView.swift; path = HRMgmt/QueryMain/QueryMainView/QueryView.swift; sourceTree = SOURCE_ROOT; };
+		915A8CB4229E701C00B5E492 /* CreateQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateQuery.swift; path = "HRMgmt/Create Query/Create Query View/CreateQuery.swift"; sourceTree = SOURCE_ROOT; };
+		915A8CCA229E7FCB00B5E492 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		915E14EB2293D2F20049A17C /* HRMgmt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRMgmt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		915E14EE2293D2F20049A17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		915E14F02293D2F20049A17C /* HomeMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMain.swift; sourceTree = "<group>"; };
+		915E14F32293D2F20049A17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		915E14F52293D2F40049A17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		915E14F82293D2F40049A17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		915E14FA2293D2F40049A17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		915E15002293D9DE0049A17C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		915E150822940FA10049A17C /* AttendanceWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceWeek.swift; sourceTree = "<group>"; };
+		915E150A22941AB70049A17C /* AttendanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCell.swift; sourceTree = "<group>"; };
+		915E150D22941AE50049A17C /* AttendanceDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDay.swift; sourceTree = "<group>"; };
+		915E1510229501960049A17C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		915E1512229517A70049A17C /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		915E151422951DF20049A17C /* employeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeList.swift; sourceTree = "<group>"; };
+		915E151722956E150049A17C /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		915E151A22965B8B0049A17C /* iconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconsView.swift; sourceTree = "<group>"; };
+		918E2B2D22B12AFA00688B05 /* AttendanceDayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDayPresenter.swift; sourceTree = "<group>"; };
+		918E2B2F22B12B3A00688B05 /* AttendanceDayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDayInteractor.swift; sourceTree = "<group>"; };
+		918E2B3122B12B4B00688B05 /* AttendanceDayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDayProtocol.swift; sourceTree = "<group>"; };
+		918E2B3422B1306800688B05 /* AttendanceDayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDayRouter.swift; sourceTree = "<group>"; };
+		918E2B3622B357DC00688B05 /* SingleTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTaskView.swift; sourceTree = "<group>"; };
+		91D2470D22A923C400FDB7CA /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		91D2471522AA70D800FDB7CA /* HolidayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayProtocol.swift; sourceTree = "<group>"; };
+		91D2471722AA728F00FDB7CA /* HolidayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayPresenter.swift; sourceTree = "<group>"; };
+		91D2471922AA72A000FDB7CA /* HolidayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayInteractor.swift; sourceTree = "<group>"; };
+		91D2471B22AA72AA00FDB7CA /* HolidayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRouter.swift; sourceTree = "<group>"; };
+		91D2472422AB6C2500FDB7CA /* TaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPresenter.swift; sourceTree = "<group>"; };
+		91D2472622AB6CC600FDB7CA /* TaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInteractor.swift; sourceTree = "<group>"; };
+		91D2472822AB6CD300FDB7CA /* TaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRouter.swift; sourceTree = "<group>"; };
+		91D2472A22AB6CE500FDB7CA /* TaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskProtocol.swift; sourceTree = "<group>"; };
+		91D2473522AE1BEA00FDB7CA /* ServicesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProtocol.swift; sourceTree = "<group>"; };
+		91D2473722AE1BF900FDB7CA /* ServicesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPresenter.swift; sourceTree = "<group>"; };
+		91D2473922AE1C0A00FDB7CA /* Services Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services Router.swift"; sourceTree = "<group>"; };
+		91D2473D22AE223600FDB7CA /* DateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateController.swift; sourceTree = "<group>"; };
+		91D2474922AE22D200FDB7CA /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = "HRMgmt/Services/Services View/New Group/ActivityIndicator.swift"; sourceTree = SOURCE_ROOT; };
+		91D2474B22AE22F100FDB7CA /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingControl.swift; path = "HRMgmt/Services/Services View/New Group/RatingControl.swift"; sourceTree = SOURCE_ROOT; };
+		91D2474D22AE230D00FDB7CA /* FeedBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedBackView.swift; path = "HRMgmt/Services/Services View/New Group/FeedBackView.swift"; sourceTree = SOURCE_ROOT; };
+		91D2475022AE23A200FDB7CA /* FilesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilesView.swift; path = "HRMgmt/Services View/samp/Leave Tracker/FilesView.swift"; sourceTree = SOURCE_ROOT; };
+		91D2475222AE23C100FDB7CA /* PermissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PermissionView.swift; path = HRMgmt/Entity/PerformanceMain/Permission/PermissionView/PermissionView.swift; sourceTree = SOURCE_ROOT; };
+		91D2475422AE23D500FDB7CA /* DownloadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadCell.swift; path = "HRMgmt/Services View/samp/Leave Tracker/DownloadCell.swift"; sourceTree = SOURCE_ROOT; };
+		91D2475622AE258400FDB7CA /* PerformanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceCell.swift; sourceTree = "<group>"; };
+		91D2475822AE54C400FDB7CA /* PreformanceMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreformanceMain.swift; sourceTree = "<group>"; };
+		91D2476022AE844600FDB7CA /* PerformanceMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMainPresenter.swift; sourceTree = "<group>"; };
+		91D2476222AE845900FDB7CA /* PerformanceMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMainInteractor.swift; sourceTree = "<group>"; };
+		91D2476422AE849F00FDB7CA /* PerformanceMainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMainProtocol.swift; sourceTree = "<group>"; };
+		91D2476622AE84B200FDB7CA /* PerformanceMainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMainRouter.swift; sourceTree = "<group>"; };
+		91D2476D22AF794900FDB7CA /* MakeAnnouncmentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAnnouncmentPresenter.swift; sourceTree = "<group>"; };
+		91D2476F22AF795E00FDB7CA /* MakeAnnouncementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAnnouncementInteractor.swift; sourceTree = "<group>"; };
+		91D2477122AF797100FDB7CA /* MakeAnnouncementProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAnnouncementProtocol.swift; sourceTree = "<group>"; };
+		91D2477322AF798000FDB7CA /* MakeAnnouncementRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAnnouncementRouter.swift; sourceTree = "<group>"; };
+		91D2477B22AFA48000FDB7CA /* NotificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenter.swift; sourceTree = "<group>"; };
+		91D2477D22AFA4AA00FDB7CA /* NotificationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationInteractor.swift; sourceTree = "<group>"; };
+		91D2477F22AFA4BD00FDB7CA /* NotificationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationProtocol.swift; sourceTree = "<group>"; };
+		91D2478122AFA7EC00FDB7CA /* NotificationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRouter.swift; sourceTree = "<group>"; };
+		91D2478322AFBCD600FDB7CA /* ShowNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNotification.swift; sourceTree = "<group>"; };
+		91D2479022B0C7C300FDB7CA /* CreateTaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskRouter.swift; sourceTree = "<group>"; };
+		91D2479222B0C7D300FDB7CA /* CreateTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskProtocol.swift; sourceTree = "<group>"; };
+		91D2479422B0C7E400FDB7CA /* CreateTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskInteractor.swift; sourceTree = "<group>"; };
+		91D2479622B0C7F900FDB7CA /* CreateTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskPresenter.swift; sourceTree = "<group>"; };
+		91D2479A22B0CBC700FDB7CA /* Insurance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
+		91D2479C22B0CBEE00FDB7CA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = HRMgmt/AttendanceDay/Login/LoginView/LoginView.swift; sourceTree = SOURCE_ROOT; };
+		91D247A022B0CC1200FDB7CA /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = "HRMgmt/AttendanceDay/Login/Login presenter/LoginPresenter.swift"; sourceTree = SOURCE_ROOT; };
+		91D247A222B0CC1E00FDB7CA /* LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginProtocol.swift; path = "HRMgmt/AttendanceDay/Login/Login Protocol/LoginProtocol.swift"; sourceTree = SOURCE_ROOT; };
+		91D247A422B0CC2C00FDB7CA /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRouter.swift; path = "HRMgmt/AttendanceDay/Login/Login wireFrame/LoginRouter.swift"; sourceTree = SOURCE_ROOT; };
+		91D247AC22B0CCE000FDB7CA /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginInteractor.swift; path = HRMgmt/AttendanceDay/Login/LoginInteractor/LoginInteractor.swift; sourceTree = SOURCE_ROOT; };
+		91DFA23D229E7FE7009F3F8D /* Performance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
+		91DFA23E229E7FE8009F3F8D /* Permission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		91DFA23F229E7FE8009F3F8D /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		91DFA240229E7FE8009F3F8D /* QueryReplies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryReplies.swift; sourceTree = "<group>"; };
+		91DFA241229E7FE8009F3F8D /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		91DFA247229E8011009F3F8D /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		91DFA248229E8011009F3F8D /* Leave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leave.swift; sourceTree = "<group>"; };
+		91DFA249229E8011009F3F8D /* PaySlip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaySlip.swift; sourceTree = "<group>"; };
+		91DFA24A229E8011009F3F8D /* Notificaiton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificaiton.swift; sourceTree = "<group>"; };
+		91DFA24B229E8011009F3F8D /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
+		91DFA251229E8097009F3F8D /* PerformanceMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMainView.swift; sourceTree = "<group>"; };
+		91DFA255229E80BD009F3F8D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		91DFA25C229E83BB009F3F8D /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		91DFA25E229E87E4009F3F8D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		91DFA260229E881D009F3F8D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		91DFA262229E88B8009F3F8D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		91DFA277229EAC48009F3F8D /* AttendanceWeekProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceWeekProtocol.swift; sourceTree = "<group>"; };
+		91DFA279229EAFE7009F3F8D /* AttendacneWeekInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendacneWeekInteractor.swift; sourceTree = "<group>"; };
+		91DFA27B229F8B3E009F3F8D /* AttendancePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendancePresenter.swift; sourceTree = "<group>"; };
+		91DFA27D229F8B6D009F3F8D /* AttendanceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceRouter.swift; sourceTree = "<group>"; };
+		91DFA285229FACF7009F3F8D /* LeaveTrackerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveTrackerProtocol.swift; sourceTree = "<group>"; };
+		91DFA287229FB11B009F3F8D /* LeavePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeavePresenter.swift; sourceTree = "<group>"; };
+		91DFA289229FB162009F3F8D /* LeaveInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveInteractor.swift; sourceTree = "<group>"; };
+		91DFA28B229FB1B1009F3F8D /* LeaveTrackerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveTrackerRouter.swift; sourceTree = "<group>"; };
+		91DFA293229FCC9F009F3F8D /* ApplyLeaveProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyLeaveProtocol.swift; sourceTree = "<group>"; };
+		91DFA295229FCCB9009F3F8D /* ApplyLeaveInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyLeaveInteractor.swift; sourceTree = "<group>"; };
+		91DFA297229FCCCA009F3F8D /* ApplyLeavePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyLeavePresenter.swift; sourceTree = "<group>"; };
+		91DFA299229FCCDF009F3F8D /* ApplyLeaveRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyLeaveRouter.swift; sourceTree = "<group>"; };
+		91DFA2A1229FFC17009F3F8D /* performanceGiveProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performanceGiveProtocol.swift; sourceTree = "<group>"; };
+		91DFA2A3229FFC2F009F3F8D /* performanceGivePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performanceGivePresenter.swift; sourceTree = "<group>"; };
+		91DFA2A5229FFC47009F3F8D /* performanceGiveInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performanceGiveInteractor.swift; sourceTree = "<group>"; };
+		91DFA2A7229FFC79009F3F8D /* performanceGiveRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = performanceGiveRouter.swift; sourceTree = "<group>"; };
+		91DFA2AF22A0FF67009F3F8D /* PaySlipProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySlipProtocol.swift; sourceTree = "<group>"; };
+		91DFA2B122A0FF8E009F3F8D /* PaySlipPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySlipPresenter.swift; sourceTree = "<group>"; };
+		91DFA2B322A0FF9F009F3F8D /* PaySlipInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySlipInteractor.swift; sourceTree = "<group>"; };
+		91DFA2B522A0FFC0009F3F8D /* PaySlipRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaySlipRouter.swift; sourceTree = "<group>"; };
+		91DFA2B822A121F1009F3F8D /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		91DFA2BA22A12DCB009F3F8D /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		91DFA2C222A19499009F3F8D /* Profile Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Interactor.swift"; sourceTree = "<group>"; };
+		91DFA2C422A194AE009F3F8D /* Profile Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Presenter.swift"; sourceTree = "<group>"; };
+		91DFA2C622A1950A009F3F8D /* Profile Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Protocol.swift"; sourceTree = "<group>"; };
+		91DFA2C822A1951B009F3F8D /* Profile Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Router.swift"; sourceTree = "<group>"; };
+		91DFA2D022A28568009F3F8D /* PeopleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRouter.swift; sourceTree = "<group>"; };
+		91DFA2D222A28574009F3F8D /* PeoplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePresenter.swift; sourceTree = "<group>"; };
+		91DFA2D422A285A7009F3F8D /* PeopleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleInteractor.swift; sourceTree = "<group>"; };
+		91DFA2D622A285B3009F3F8D /* PeopleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleProtocol.swift; sourceTree = "<group>"; };
+		91DFA2DF22A52EA7009F3F8D /* InsuranceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceProtocol.swift; sourceTree = "<group>"; };
+		91DFA2E122A6286D009F3F8D /* pdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdf.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		915E14E82293D2F20049A17C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		912483EE22979EC300757F7C /* Services View */ = {
+			isa = PBXGroup;
+			children = (
+				912483EF2297A4E900757F7C /* ServicesView.swift */,
+			);
+			path = "Services View";
+			sourceTree = "<group>";
+		};
+		913BA69322CA2C7200444D9C /* ExtraFiles */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B6622BB60C50086A5AD /* HomeCollectionViewCell.swift */,
+				91DFA2E122A6286D009F3F8D /* pdf.swift */,
+				913BA69122C3475000444D9C /* TextView.swift */,
+				913BA68322C0ECAC00444D9C /* loading.gif */,
+				913BA68522C0FB5C00444D9C /* Downloader.swift */,
+				913BA67F22C0E95B00444D9C /* gifExtension.swift */,
+			);
+			path = ExtraFiles;
+			sourceTree = "<group>";
+		};
+		913C8AFA22B6B8B90086A5AD /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				913C8AFF22B6B8D90086A5AD /* PermissionView */,
+				913C8AFE22B6B8D70086A5AD /* PermissionPresenter */,
+				913C8AFD22B6B8D60086A5AD /* PermissionInteractor */,
+				913C8AFC22B6B8D40086A5AD /* PermissionProtocol */,
+				913C8AFB22B6B8D20086A5AD /* PermissionRouter */,
+			);
+			name = Permission;
+			path = Entity/PerformanceMain/Permission;
+			sourceTree = "<group>";
+		};
+		913C8AFB22B6B8D20086A5AD /* PermissionRouter */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B0722B6B99F0086A5AD /* PermissionRouter.swift */,
+			);
+			path = PermissionRouter;
+			sourceTree = "<group>";
+		};
+		913C8AFC22B6B8D40086A5AD /* PermissionProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B0522B6B98F0086A5AD /* PermissionProtocol.swift */,
+			);
+			path = PermissionProtocol;
+			sourceTree = "<group>";
+		};
+		913C8AFD22B6B8D60086A5AD /* PermissionInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B0322B6B9830086A5AD /* PermissionInteractor.swift */,
+			);
+			path = PermissionInteractor;
+			sourceTree = "<group>";
+		};
+		913C8AFE22B6B8D70086A5AD /* PermissionPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B0122B6B9760086A5AD /* PermissionPresenter.swift */,
+			);
+			path = PermissionPresenter;
+			sourceTree = "<group>";
+		};
+		913C8AFF22B6B8D90086A5AD /* PermissionView */ = {
+			isa = PBXGroup;
+			children = (
+				91D2475222AE23C100FDB7CA /* PermissionView.swift */,
+			);
+			path = PermissionView;
+			sourceTree = "<group>";
+		};
+		913C8B0922B74C3C0086A5AD /* Notification Router */ = {
+			isa = PBXGroup;
+			children = (
+				91D2478122AFA7EC00FDB7CA /* NotificationRouter.swift */,
+			);
+			path = "Notification Router";
+			sourceTree = "<group>";
+		};
+		913C8B0A22B74C3E0086A5AD /* Notification Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91D2477F22AFA4BD00FDB7CA /* NotificationProtocol.swift */,
+			);
+			path = "Notification Protocol";
+			sourceTree = "<group>";
+		};
+		913C8B0B22B74C3F0086A5AD /* Notification Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91D2477D22AFA4AA00FDB7CA /* NotificationInteractor.swift */,
+			);
+			path = "Notification Interactor";
+			sourceTree = "<group>";
+		};
+		913C8B0C22B74C410086A5AD /* Notification View */ = {
+			isa = PBXGroup;
+			children = (
+				915A8CAE229E6FFC00B5E492 /* NotificaitonView.swift */,
+			);
+			path = "Notification View";
+			sourceTree = "<group>";
+		};
+		913C8B0D22B74C430086A5AD /* Notification Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2477B22AFA48000FDB7CA /* NotificationPresenter.swift */,
+			);
+			path = "Notification Presenter";
+			sourceTree = "<group>";
+		};
+		913C8B1822B89B4D0086A5AD /* SingleQuery */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B1D22B89B6D0086A5AD /* Single  Query Router */,
+				913C8B1C22B89B6C0086A5AD /* Single Query Interactor */,
+				913C8B1B22B89B6A0086A5AD /* Single Query Protocol */,
+				913C8B1A22B89B690086A5AD /* Single Query Presenter */,
+				913C8B1922B89B670086A5AD /* Single Query View */,
+			);
+			path = SingleQuery;
+			sourceTree = "<group>";
+		};
+		913C8B1922B89B670086A5AD /* Single Query View */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B1622B7A24D0086A5AD /* SingleQueryView.swift */,
+			);
+			path = "Single Query View";
+			sourceTree = "<group>";
+		};
+		913C8B1A22B89B690086A5AD /* Single Query Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B3D22B9704D0086A5AD /* SingleQueryPresenter.swift */,
+			);
+			path = "Single Query Presenter";
+			sourceTree = "<group>";
+		};
+		913C8B1B22B89B6A0086A5AD /* Single Query Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B4022B970690086A5AD /* SingleQueryProtocol.swift */,
+			);
+			path = "Single Query Protocol";
+			sourceTree = "<group>";
+		};
+		913C8B1C22B89B6C0086A5AD /* Single Query Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B4222B970780086A5AD /* SingleQueryInteractor.swift */,
+			);
+			path = "Single Query Interactor";
+			sourceTree = "<group>";
+		};
+		913C8B1D22B89B6D0086A5AD /* Single  Query Router */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B4422B970860086A5AD /* SingleQueryRouter.swift */,
+			);
+			path = "Single  Query Router";
+			sourceTree = "<group>";
+		};
+		913C8B1E22B8B6030086A5AD /* QueryMain */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B2322B8B69C0086A5AD /* QueryMainView */,
+				913C8B2222B8B69A0086A5AD /* QueryMainPresenter */,
+				913C8B2122B8B6980086A5AD /* QueryMainInteractor */,
+				913C8B2022B8B6970086A5AD /* QueryMain Protocol */,
+				913C8B1F22B8B6960086A5AD /* QueryMain Router */,
+			);
+			path = QueryMain;
+			sourceTree = "<group>";
+		};
+		913C8B1F22B8B6960086A5AD /* QueryMain Router */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B2A22B8B78D0086A5AD /* QueryMainRouter.swift */,
+			);
+			path = "QueryMain Router";
+			sourceTree = "<group>";
+		};
+		913C8B2022B8B6970086A5AD /* QueryMain Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B2822B8B7620086A5AD /* QueryMainProtocol.swift */,
+			);
+			path = "QueryMain Protocol";
+			sourceTree = "<group>";
+		};
+		913C8B2122B8B6980086A5AD /* QueryMainInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B2622B8B7540086A5AD /* QueryMainInteractor.swift */,
+			);
+			path = QueryMainInteractor;
+			sourceTree = "<group>";
+		};
+		913C8B2222B8B69A0086A5AD /* QueryMainPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B2422B8B7420086A5AD /* QueryMainPresenter.swift */,
+			);
+			path = QueryMainPresenter;
+			sourceTree = "<group>";
+		};
+		913C8B2322B8B69C0086A5AD /* QueryMainView */ = {
+			isa = PBXGroup;
+			children = (
+				915A8CB3229E701B00B5E492 /* QueryView.swift */,
+			);
+			path = QueryMainView;
+			sourceTree = "<group>";
+		};
+		913C8B2C22B8FAF10086A5AD /* Create Query */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B3122B8FB040086A5AD /* Create Query View */,
+				913C8B3022B8FB030086A5AD /* Create Query Presenter */,
+				913C8B2F22B8FB020086A5AD /* Create Query Interactor */,
+				913C8B2E22B8FB010086A5AD /* Create Query Protocol */,
+				913C8B2D22B8FAFE0086A5AD /* Create Query Router */,
+			);
+			path = "Create Query";
+			sourceTree = "<group>";
+		};
+		913C8B2D22B8FAFE0086A5AD /* Create Query Router */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B3A22B8FBE90086A5AD /* CreateQueryRouter.swift */,
+			);
+			path = "Create Query Router";
+			sourceTree = "<group>";
+		};
+		913C8B2E22B8FB010086A5AD /* Create Query Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B3822B8FBDA0086A5AD /* CreateQueryProtocol.swift */,
+			);
+			path = "Create Query Protocol";
+			sourceTree = "<group>";
+		};
+		913C8B2F22B8FB020086A5AD /* Create Query Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B3622B8FBCC0086A5AD /* CreateQueryInteractor.swift */,
+			);
+			path = "Create Query Interactor";
+			sourceTree = "<group>";
+		};
+		913C8B3022B8FB030086A5AD /* Create Query Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B3422B8FBBC0086A5AD /* CreateQueryPresenter.swift */,
+			);
+			path = "Create Query Presenter";
+			sourceTree = "<group>";
+		};
+		913C8B3122B8FB040086A5AD /* Create Query View */ = {
+			isa = PBXGroup;
+			children = (
+				915A8CB4229E701C00B5E492 /* CreateQuery.swift */,
+			);
+			path = "Create Query View";
+			sourceTree = "<group>";
+		};
+		915A8C72229E6C3400B5E492 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				915E14F02293D2F20049A17C /* HomeMain.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		915A8C73229E6C3600B5E492 /* Home Router */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA262229E88B8009F3F8D /* HomeRouter.swift */,
+			);
+			path = "Home Router";
+			sourceTree = "<group>";
+		};
+		915A8C74229E6C4300B5E492 /* Home Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA260229E881D009F3F8D /* HomeInteractor.swift */,
+			);
+			path = "Home Interactor";
+			sourceTree = "<group>";
+		};
+		915A8C75229E6C4500B5E492 /* Home Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA25E229E87E4009F3F8D /* HomePresenter.swift */,
+			);
+			path = "Home Presentor";
+			sourceTree = "<group>";
+		};
+		915A8CBC229E7C8500B5E492 /* Make Announcement */ = {
+			isa = PBXGroup;
+			children = (
+				91D2476C22AF75BC00FDB7CA /* Make Announcement View */,
+				91D2476B22AF759E00FDB7CA /* Make AnnouncementPresenter */,
+				91D2476A22AF759D00FDB7CA /* Make Announcement Interactor */,
+				91D2476922AF759B00FDB7CA /* Make Announcement protocol */,
+				91D2476822AF757800FDB7CA /* Make Announcement Router */,
+			);
+			name = "Make Announcement";
+			path = "New Group/Make Announcement";
+			sourceTree = "<group>";
+		};
+		915A8CBF229E7D0F00B5E492 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA24B229E8011009F3F8D /* Department.swift */,
+				915A8CCA229E7FCB00B5E492 /* Tasks.swift */,
+				91DFA23D229E7FE7009F3F8D /* Performance.swift */,
+				91DFA247229E8011009F3F8D /* Employee.swift */,
+				91DFA248229E8011009F3F8D /* Leave.swift */,
+				91DFA24A229E8011009F3F8D /* Notificaiton.swift */,
+				91DFA249229E8011009F3F8D /* PaySlip.swift */,
+				91DFA23E229E7FE8009F3F8D /* Permission.swift */,
+				91DFA23F229E7FE8009F3F8D /* Query.swift */,
+				91DFA240229E7FE8009F3F8D /* QueryReplies.swift */,
+				91DFA241229E7FE8009F3F8D /* Tasks.swift */,
+				91D2475622AE258400FDB7CA /* PerformanceCell.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		915E14E22293D2F20049A17C = {
+			isa = PBXGroup;
+			children = (
+				915E14ED2293D2F20049A17C /* HRMgmt */,
+				915E14EC2293D2F20049A17C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		915E14EC2293D2F20049A17C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				915E14EB2293D2F20049A17C /* HRMgmt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		915E14ED2293D2F20049A17C /* HRMgmt */ = {
+			isa = PBXGroup;
+			children = (
+				913BA69322CA2C7200444D9C /* ExtraFiles */,
+				913C8B2C22B8FAF10086A5AD /* Create Query */,
+				913C8B1E22B8B6030086A5AD /* QueryMain */,
+				913C8B1822B89B4D0086A5AD /* SingleQuery */,
+				915E14EE2293D2F20049A17C /* AppDelegate.swift */,
+				91D2471D22AB686B00FDB7CA /* Tasks */,
+				91DFA2B722A12108009F3F8D /* Database */,
+				916128F7229E3CC000C0960D /* Login */,
+				91DFA266229EA2E2009F3F8D /* TabBar Controller */,
+				915E151922965B170049A17C /* Home */,
+				91DFA271229EA937009F3F8D /* AttendanceWeek */,
+				91DFA27F229FAA98009F3F8D /* LeaveTracker */,
+				91DFA28D229FCB25009F3F8D /* Apply Leave */,
+				91DFA29B229FFA22009F3F8D /* Give Performance */,
+				91DFA2A922A0F9BE009F3F8D /* Pay Slip */,
+				91DFA2BC22A1938B009F3F8D /* Profile */,
+				91D2470F22AA704D00FDB7CA /* Holiday */,
+				91DFA2CA22A283F9009F3F8D /* People */,
+				91DFA2D822A52C1F009F3F8D /* New Group */,
+				915A8CBC229E7C8500B5E492 /* Make Announcement */,
+				915E150F229501710049A17C /* Profile */,
+				91D2477522AFA35000FDB7CA /* Show Notification */,
+				91DFA2D922A52C21009F3F8D /* Notification */,
+				915E150C22941ABE0049A17C /* AttendanceDay */,
+				91D2472E22AE1AA600FDB7CA /* Services */,
+				91D2474F22AE237900FDB7CA /* FilesView */,
+				91A1DB2E229BA18200FB5AE8 /* samp */,
+				91D2475A22AE830500FDB7CA /* PerformanceMain */,
+				913C8AFA22B6B8B90086A5AD /* Permission */,
+				915A8CBF229E7D0F00B5E492 /* Entity */,
+				91D2478A22B0C5A400FDB7CA /* CreateTask */,
+				918E2B3822B357EF00688B05 /* SingleTask */,
+				915E14F22293D2F20049A17C /* Main.storyboard */,
+				915E15002293D9DE0049A17C /* Extensions.swift */,
+				915E14F52293D2F40049A17C /* Assets.xcassets */,
+				915E14F72293D2F40049A17C /* LaunchScreen.storyboard */,
+				915E14FA2293D2F40049A17C /* Info.plist */,
+			);
+			path = HRMgmt;
+			sourceTree = "<group>";
+		};
+		915E150C22941ABE0049A17C /* AttendanceDay */ = {
+			isa = PBXGroup;
+			children = (
+				918E2B3322B1304A00688B05 /* AttendanceDayRouter */,
+				91D2478922B0C58C00FDB7CA /* AttendanceDayPresenter */,
+				91D2478822B0C58B00FDB7CA /* AttendanceDayInteractor */,
+				91D2478722B0C58900FDB7CA /* AttendanceDayProtocol */,
+				91D2478622B0C58800FDB7CA /* AttendanceDayView */,
+			);
+			path = AttendanceDay;
+			sourceTree = "<group>";
+		};
+		915E150F229501710049A17C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				915E1512229517A70049A17C /* ProfileCell.swift */,
+				915E151422951DF20049A17C /* employeeList.swift */,
+				915E150A22941AB70049A17C /* AttendanceCell.swift */,
+				912483F522986C1000757F7C /* tableAnimation.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		915E151922965B170049A17C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA25B229E82F7009F3F8D /* Home Protocol */,
+				915A8C75229E6C4500B5E492 /* Home Presentor */,
+				915A8C74229E6C4300B5E492 /* Home Interactor */,
+				915A8C73229E6C3600B5E492 /* Home Router */,
+				915A8C72229E6C3400B5E492 /* HomeView */,
+				915E151A22965B8B0049A17C /* iconsView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		916128F7229E3CC000C0960D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				916128F9229E3D0C00C0960D /* LoginView */,
+				916128FE229E3D1B00C0960D /* LoginInteractor */,
+				916128FD229E3D1900C0960D /* Login presenter */,
+				916128FF229E3D6200C0960D /* Login Protocol */,
+				916128FC229E3D1700C0960D /* Login wireFrame */,
+			);
+			name = Login;
+			path = Attendance/Login;
+			sourceTree = "<group>";
+		};
+		916128F9229E3D0C00C0960D /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				91D2479C22B0CBEE00FDB7CA /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		916128FC229E3D1700C0960D /* Login wireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				91D247A422B0CC2C00FDB7CA /* LoginRouter.swift */,
+			);
+			path = "Login wireFrame";
+			sourceTree = "<group>";
+		};
+		916128FD229E3D1900C0960D /* Login presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91D247A022B0CC1200FDB7CA /* LoginPresenter.swift */,
+			);
+			path = "Login presenter";
+			sourceTree = "<group>";
+		};
+		916128FE229E3D1B00C0960D /* LoginInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				91D247AC22B0CCE000FDB7CA /* LoginInteractor.swift */,
+			);
+			path = LoginInteractor;
+			sourceTree = "<group>";
+		};
+		916128FF229E3D6200C0960D /* Login Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91D247A222B0CC1E00FDB7CA /* LoginProtocol.swift */,
+			);
+			path = "Login Protocol";
+			sourceTree = "<group>";
+		};
+		918E2B3322B1304A00688B05 /* AttendanceDayRouter */ = {
+			isa = PBXGroup;
+			children = (
+				918E2B3422B1306800688B05 /* AttendanceDayRouter.swift */,
+			);
+			path = AttendanceDayRouter;
+			sourceTree = "<group>";
+		};
+		918E2B3822B357EF00688B05 /* SingleTask */ = {
+			isa = PBXGroup;
+			children = (
+				918E2B3D22B3587500688B05 /* SingleTaskPresenter */,
+				918E2B3C22B3587300688B05 /* SingleTaskView */,
+				918E2B3B22B3587200688B05 /* SingleTaskProtocol */,
+				918E2B3A22B3587100688B05 /* SingleTaskInteractor */,
+				918E2B3922B3587000688B05 /* SingleTaskRouter */,
+			);
+			path = SingleTask;
+			sourceTree = "<group>";
+		};
+		918E2B3922B3587000688B05 /* SingleTaskRouter */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B1422B789380086A5AD /* SingleTaskRouter.swift */,
+			);
+			path = SingleTaskRouter;
+			sourceTree = "<group>";
+		};
+		918E2B3A22B3587100688B05 /* SingleTaskInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B1222B789280086A5AD /* SingleTaskInteractor.swift */,
+			);
+			path = SingleTaskInteractor;
+			sourceTree = "<group>";
+		};
+		918E2B3B22B3587200688B05 /* SingleTaskProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B0E22B786A20086A5AD /* SingleTaskProtocol.swift */,
+			);
+			path = SingleTaskProtocol;
+			sourceTree = "<group>";
+		};
+		918E2B3C22B3587300688B05 /* SingleTaskView */ = {
+			isa = PBXGroup;
+			children = (
+				918E2B3622B357DC00688B05 /* SingleTaskView.swift */,
+			);
+			path = SingleTaskView;
+			sourceTree = "<group>";
+		};
+		918E2B3D22B3587500688B05 /* SingleTaskPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B1022B789030086A5AD /* SingleTaskPeresenter.swift */,
+			);
+			path = SingleTaskPresenter;
+			sourceTree = "<group>";
+		};
+		91A1DB2E229BA18200FB5AE8 /* samp */ = {
+			isa = PBXGroup;
+			children = (
+				91D2474922AE22D200FDB7CA /* ActivityIndicator.swift */,
+				91D2474B22AE22F100FDB7CA /* RatingControl.swift */,
+				91D2474D22AE230D00FDB7CA /* FeedBackView.swift */,
+				91D2473D22AE223600FDB7CA /* DateController.swift */,
+			);
+			name = samp;
+			path = "Services View/samp";
+			sourceTree = "<group>";
+		};
+		91D2470F22AA704D00FDB7CA /* Holiday */ = {
+			isa = PBXGroup;
+			children = (
+				91D2471422AA706600FDB7CA /* Holiday Presenter */,
+				91D2471322AA706200FDB7CA /* Holiday Interactor */,
+				91D2471222AA706000FDB7CA /* Holiday Protocol */,
+				91D2471122AA705F00FDB7CA /* Holiday view */,
+				91D2471022AA705D00FDB7CA /* Holiday Router */,
+			);
+			path = Holiday;
+			sourceTree = "<group>";
+		};
+		91D2471022AA705D00FDB7CA /* Holiday Router */ = {
+			isa = PBXGroup;
+			children = (
+				91D2471B22AA72AA00FDB7CA /* HolidayRouter.swift */,
+			);
+			path = "Holiday Router";
+			sourceTree = "<group>";
+		};
+		91D2471122AA705F00FDB7CA /* Holiday view */ = {
+			isa = PBXGroup;
+			children = (
+				91D2470D22A923C400FDB7CA /* Holiday.swift */,
+			);
+			path = "Holiday view";
+			sourceTree = "<group>";
+		};
+		91D2471222AA706000FDB7CA /* Holiday Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91D2471522AA70D800FDB7CA /* HolidayProtocol.swift */,
+			);
+			path = "Holiday Protocol";
+			sourceTree = "<group>";
+		};
+		91D2471322AA706200FDB7CA /* Holiday Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91D2471922AA72A000FDB7CA /* HolidayInteractor.swift */,
+			);
+			path = "Holiday Interactor";
+			sourceTree = "<group>";
+		};
+		91D2471422AA706600FDB7CA /* Holiday Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2471722AA728F00FDB7CA /* HolidayPresenter.swift */,
+			);
+			path = "Holiday Presenter";
+			sourceTree = "<group>";
+		};
+		91D2471D22AB686B00FDB7CA /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				911188AB229AFCD500BC64E3 /* TaskCell.swift */,
+				91D2472322AB6BBD00FDB7CA /* Task Presenter */,
+				91D2472222AB6BBB00FDB7CA /* Task Interactor */,
+				91D2472122AB6BBA00FDB7CA /* Task Router */,
+				91D2472022AB6BB800FDB7CA /* Task Protocol */,
+				91D2471E22AB6BB200FDB7CA /* Task View */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		91D2471E22AB6BB200FDB7CA /* Task View */ = {
+			isa = PBXGroup;
+			children = (
+				911188A9229AF64F00BC64E3 /* Task.swift */,
+			);
+			path = "Task View";
+			sourceTree = "<group>";
+		};
+		91D2472022AB6BB800FDB7CA /* Task Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91D2472A22AB6CE500FDB7CA /* TaskProtocol.swift */,
+			);
+			path = "Task Protocol";
+			sourceTree = "<group>";
+		};
+		91D2472122AB6BBA00FDB7CA /* Task Router */ = {
+			isa = PBXGroup;
+			children = (
+				91D2472822AB6CD300FDB7CA /* TaskRouter.swift */,
+			);
+			path = "Task Router";
+			sourceTree = "<group>";
+		};
+		91D2472222AB6BBB00FDB7CA /* Task Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91D2472622AB6CC600FDB7CA /* TaskInteractor.swift */,
+			);
+			path = "Task Interactor";
+			sourceTree = "<group>";
+		};
+		91D2472322AB6BBD00FDB7CA /* Task Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2472422AB6C2500FDB7CA /* TaskPresenter.swift */,
+			);
+			path = "Task Presenter";
+			sourceTree = "<group>";
+		};
+		91D2472E22AE1AA600FDB7CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				91D2473422AE1BC700FDB7CA /* Services Protocol */,
+				91D2473322AE1AFD00FDB7CA /* Services Presenter */,
+				91D2473222AE1AFB00FDB7CA /* Services Router */,
+				912483EE22979EC300757F7C /* Services View */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		91D2473222AE1AFB00FDB7CA /* Services Router */ = {
+			isa = PBXGroup;
+			children = (
+				91D2473922AE1C0A00FDB7CA /* Services Router.swift */,
+			);
+			path = "Services Router";
+			sourceTree = "<group>";
+		};
+		91D2473322AE1AFD00FDB7CA /* Services Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2473722AE1BF900FDB7CA /* ServicesPresenter.swift */,
+			);
+			path = "Services Presenter";
+			sourceTree = "<group>";
+		};
+		91D2473422AE1BC700FDB7CA /* Services Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91D2473522AE1BEA00FDB7CA /* ServicesProtocol.swift */,
+			);
+			path = "Services Protocol";
+			sourceTree = "<group>";
+		};
+		91D2474F22AE237900FDB7CA /* FilesView */ = {
+			isa = PBXGroup;
+			children = (
+				91D2475422AE23D500FDB7CA /* DownloadCell.swift */,
+				91D2475022AE23A200FDB7CA /* FilesView.swift */,
+			);
+			name = FilesView;
+			path = "Services View/samp/FilesView";
+			sourceTree = "<group>";
+		};
+		91D2475A22AE830500FDB7CA /* PerformanceMain */ = {
+			isa = PBXGroup;
+			children = (
+				91D2475F22AE832D00FDB7CA /* PerformanceMainView */,
+				91D2475E22AE832B00FDB7CA /* PerformanceMainPresenter */,
+				91D2475D22AE832A00FDB7CA /* PerformanceMainInteractor */,
+				91D2475C22AE832700FDB7CA /* PerformanceMainProtocol */,
+				91D2475B22AE832600FDB7CA /* PerformanceMainRouter */,
+			);
+			name = PerformanceMain;
+			path = Entity/PerformanceMain;
+			sourceTree = "<group>";
+		};
+		91D2475B22AE832600FDB7CA /* PerformanceMainRouter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2476622AE84B200FDB7CA /* PerformanceMainRouter.swift */,
+			);
+			path = PerformanceMainRouter;
+			sourceTree = "<group>";
+		};
+		91D2475C22AE832700FDB7CA /* PerformanceMainProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				91D2476422AE849F00FDB7CA /* PerformanceMainProtocol.swift */,
+			);
+			path = PerformanceMainProtocol;
+			sourceTree = "<group>";
+		};
+		91D2475D22AE832A00FDB7CA /* PerformanceMainInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				91D2476222AE845900FDB7CA /* PerformanceMainInteractor.swift */,
+			);
+			path = PerformanceMainInteractor;
+			sourceTree = "<group>";
+		};
+		91D2475E22AE832B00FDB7CA /* PerformanceMainPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2476022AE844600FDB7CA /* PerformanceMainPresenter.swift */,
+			);
+			path = PerformanceMainPresenter;
+			sourceTree = "<group>";
+		};
+		91D2475F22AE832D00FDB7CA /* PerformanceMainView */ = {
+			isa = PBXGroup;
+			children = (
+				91D2475822AE54C400FDB7CA /* PreformanceMain.swift */,
+			);
+			path = PerformanceMainView;
+			sourceTree = "<group>";
+		};
+		91D2476822AF757800FDB7CA /* Make Announcement Router */ = {
+			isa = PBXGroup;
+			children = (
+				91D2477322AF798000FDB7CA /* MakeAnnouncementRouter.swift */,
+			);
+			path = "Make Announcement Router";
+			sourceTree = "<group>";
+		};
+		91D2476922AF759B00FDB7CA /* Make Announcement protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91D2477122AF797100FDB7CA /* MakeAnnouncementProtocol.swift */,
+			);
+			path = "Make Announcement protocol";
+			sourceTree = "<group>";
+		};
+		91D2476A22AF759D00FDB7CA /* Make Announcement Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91D2476F22AF795E00FDB7CA /* MakeAnnouncementInteractor.swift */,
+			);
+			path = "Make Announcement Interactor";
+			sourceTree = "<group>";
+		};
+		91D2476B22AF759E00FDB7CA /* Make AnnouncementPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2476D22AF794900FDB7CA /* MakeAnnouncmentPresenter.swift */,
+			);
+			path = "Make AnnouncementPresenter";
+			sourceTree = "<group>";
+		};
+		91D2476C22AF75BC00FDB7CA /* Make Announcement View */ = {
+			isa = PBXGroup;
+			children = (
+				915A8CAF229E6FFC00B5E492 /* MakeAnnouncement.swift */,
+			);
+			path = "Make Announcement View";
+			sourceTree = "<group>";
+		};
+		91D2477522AFA35000FDB7CA /* Show Notification */ = {
+			isa = PBXGroup;
+			children = (
+				91D2477A22AFA38F00FDB7CA /* Show Notification Presenter */,
+				91D2477922AFA38E00FDB7CA /* Show Notification view */,
+				91D2477822AFA38D00FDB7CA /* Show Notification Interactor */,
+				91D2477722AFA38B00FDB7CA /* Show Notification Protocol */,
+				91D2477622AFA38900FDB7CA /* Show Notification Router */,
+			);
+			path = "Show Notification";
+			sourceTree = "<group>";
+		};
+		91D2477622AFA38900FDB7CA /* Show Notification Router */ = {
+			isa = PBXGroup;
+			children = (
+				913BA68F22C249E200444D9C /* ShowNotificationRouter.swift */,
+			);
+			path = "Show Notification Router";
+			sourceTree = "<group>";
+		};
+		91D2477722AFA38B00FDB7CA /* Show Notification Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				913BA68D22C2345200444D9C /* ShowNotificationProtocol.swift */,
+			);
+			path = "Show Notification Protocol";
+			sourceTree = "<group>";
+		};
+		91D2477822AFA38D00FDB7CA /* Show Notification Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				913BA68B22C2343C00444D9C /* ShowNotificationInteractor.swift */,
+			);
+			path = "Show Notification Interactor";
+			sourceTree = "<group>";
+		};
+		91D2477922AFA38E00FDB7CA /* Show Notification view */ = {
+			isa = PBXGroup;
+			children = (
+				91D2478322AFBCD600FDB7CA /* ShowNotification.swift */,
+			);
+			path = "Show Notification view";
+			sourceTree = "<group>";
+		};
+		91D2477A22AFA38F00FDB7CA /* Show Notification Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				913BA68922C2342B00444D9C /* ShowNotificaionPresenter.swift */,
+			);
+			path = "Show Notification Presenter";
+			sourceTree = "<group>";
+		};
+		91D2478622B0C58800FDB7CA /* AttendanceDayView */ = {
+			isa = PBXGroup;
+			children = (
+				915E150D22941AE50049A17C /* AttendanceDay.swift */,
+			);
+			path = AttendanceDayView;
+			sourceTree = "<group>";
+		};
+		91D2478722B0C58900FDB7CA /* AttendanceDayProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				918E2B3122B12B4B00688B05 /* AttendanceDayProtocol.swift */,
+			);
+			path = AttendanceDayProtocol;
+			sourceTree = "<group>";
+		};
+		91D2478822B0C58B00FDB7CA /* AttendanceDayInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				918E2B2F22B12B3A00688B05 /* AttendanceDayInteractor.swift */,
+			);
+			path = AttendanceDayInteractor;
+			sourceTree = "<group>";
+		};
+		91D2478922B0C58C00FDB7CA /* AttendanceDayPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				918E2B2D22B12AFA00688B05 /* AttendanceDayPresenter.swift */,
+			);
+			path = AttendanceDayPresenter;
+			sourceTree = "<group>";
+		};
+		91D2478A22B0C5A400FDB7CA /* CreateTask */ = {
+			isa = PBXGroup;
+			children = (
+				91D2478F22B0C5D000FDB7CA /* CreateTaskRouter */,
+				91D2478E22B0C5CF00FDB7CA /* CreateTaskProtocol */,
+				91D2478D22B0C5CD00FDB7CA /* CreateTaskInteractor */,
+				91D2478C22B0C5C500FDB7CA /* CreateTaskPresenter */,
+				91D2478B22B0C5C300FDB7CA /* CreateTaskView */,
+			);
+			path = CreateTask;
+			sourceTree = "<group>";
+		};
+		91D2478B22B0C5C300FDB7CA /* CreateTaskView */ = {
+			isa = PBXGroup;
+			children = (
+				911188A7229AF06E00BC64E3 /* CreateTask.swift */,
+			);
+			path = CreateTaskView;
+			sourceTree = "<group>";
+		};
+		91D2478C22B0C5C500FDB7CA /* CreateTaskPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2479622B0C7F900FDB7CA /* CreateTaskPresenter.swift */,
+			);
+			path = CreateTaskPresenter;
+			sourceTree = "<group>";
+		};
+		91D2478D22B0C5CD00FDB7CA /* CreateTaskInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				91D2479422B0C7E400FDB7CA /* CreateTaskInteractor.swift */,
+			);
+			path = CreateTaskInteractor;
+			sourceTree = "<group>";
+		};
+		91D2478E22B0C5CF00FDB7CA /* CreateTaskProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				91D2479222B0C7D300FDB7CA /* CreateTaskProtocol.swift */,
+			);
+			path = CreateTaskProtocol;
+			sourceTree = "<group>";
+		};
+		91D2478F22B0C5D000FDB7CA /* CreateTaskRouter */ = {
+			isa = PBXGroup;
+			children = (
+				91D2479022B0C7C300FDB7CA /* CreateTaskRouter.swift */,
+			);
+			path = CreateTaskRouter;
+			sourceTree = "<group>";
+		};
+		91DFA25B229E82F7009F3F8D /* Home Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA25C229E83BB009F3F8D /* HomeProtocol.swift */,
+			);
+			path = "Home Protocol";
+			sourceTree = "<group>";
+		};
+		91DFA266229EA2E2009F3F8D /* TabBar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA255229E80BD009F3F8D /* TabBarController.swift */,
+			);
+			path = "TabBar Controller";
+			sourceTree = "<group>";
+		};
+		91DFA271229EA937009F3F8D /* AttendanceWeek */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA276229EA986009F3F8D /* View */,
+				91DFA275229EA984009F3F8D /* protocol */,
+				91DFA274229EA983009F3F8D /* presenter */,
+				91DFA273229EA981009F3F8D /* router */,
+				91DFA272229EA97F009F3F8D /* interactor */,
+			);
+			path = AttendanceWeek;
+			sourceTree = "<group>";
+		};
+		91DFA272229EA97F009F3F8D /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA279229EAFE7009F3F8D /* AttendacneWeekInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		91DFA273229EA981009F3F8D /* router */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA27D229F8B6D009F3F8D /* AttendanceRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		91DFA274229EA983009F3F8D /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA27B229F8B3E009F3F8D /* AttendancePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		91DFA275229EA984009F3F8D /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA277229EAC48009F3F8D /* AttendanceWeekProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		91DFA276229EA986009F3F8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				915E150822940FA10049A17C /* AttendanceWeek.swift */,
+				913BA68722C1D61700444D9C /* AttendancePopup.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DFA27F229FAA98009F3F8D /* LeaveTracker */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA284229FAAB4009F3F8D /* View */,
+				91DFA283229FAAB2009F3F8D /* Protocol */,
+				91DFA282229FAAB1009F3F8D /* Presenter */,
+				91DFA281229FAAAF009F3F8D /* Interactor */,
+				91DFA280229FAAAD009F3F8D /* Router */,
+			);
+			path = LeaveTracker;
+			sourceTree = "<group>";
+		};
+		91DFA280229FAAAD009F3F8D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA28B229FB1B1009F3F8D /* LeaveTrackerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		91DFA281229FAAAF009F3F8D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA289229FB162009F3F8D /* LeaveInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		91DFA282229FAAB1009F3F8D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA287229FB11B009F3F8D /* LeavePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		91DFA283229FAAB2009F3F8D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA285229FACF7009F3F8D /* LeaveTrackerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		91DFA284229FAAB4009F3F8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				915A8CA4229E6FC000B5E492 /* LeaveTracker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DFA28D229FCB25009F3F8D /* Apply Leave */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA292229FCB82009F3F8D /* view */,
+				91DFA291229FCB81009F3F8D /* Protocol */,
+				91DFA290229FCB80009F3F8D /* Interactor */,
+				91DFA28F229FCB7E009F3F8D /* Presenter */,
+				91DFA28E229FCB7A009F3F8D /* Router */,
+			);
+			path = "Apply Leave";
+			sourceTree = "<group>";
+		};
+		91DFA28E229FCB7A009F3F8D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA299229FCCDF009F3F8D /* ApplyLeaveRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		91DFA28F229FCB7E009F3F8D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA297229FCCCA009F3F8D /* ApplyLeavePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		91DFA290229FCB80009F3F8D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA295229FCCB9009F3F8D /* ApplyLeaveInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		91DFA291229FCB81009F3F8D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA293229FCC9F009F3F8D /* ApplyLeaveProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		91DFA292229FCB82009F3F8D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				915A8CA2229E6FC000B5E492 /* ApplyLeaveView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		91DFA29B229FFA22009F3F8D /* Give Performance */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2A0229FFA6D009F3F8D /* view */,
+				91DFA29F229FFA6B009F3F8D /* protocol */,
+				91DFA29E229FFA6A009F3F8D /* presenter */,
+				91DFA29D229FFA68009F3F8D /* interactor */,
+				91DFA29C229FFA66009F3F8D /* router */,
+			);
+			path = "Give Performance";
+			sourceTree = "<group>";
+		};
+		91DFA29C229FFA66009F3F8D /* router */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2A7229FFC79009F3F8D /* performanceGiveRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		91DFA29D229FFA68009F3F8D /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2A5229FFC47009F3F8D /* performanceGiveInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		91DFA29E229FFA6A009F3F8D /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2A3229FFC2F009F3F8D /* performanceGivePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		91DFA29F229FFA6B009F3F8D /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2A1229FFC17009F3F8D /* performanceGiveProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		91DFA2A0229FFA6D009F3F8D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA251229E8097009F3F8D /* PerformanceMainView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		91DFA2A922A0F9BE009F3F8D /* Pay Slip */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2AE22A0FAF1009F3F8D /* view */,
+				91DFA2AD22A0FAED009F3F8D /* protocol */,
+				91DFA2AC22A0FAEC009F3F8D /* presenter */,
+				91DFA2AB22A0FAEA009F3F8D /* interactor */,
+				91DFA2AA22A0FAE8009F3F8D /* router */,
+			);
+			path = "Pay Slip";
+			sourceTree = "<group>";
+		};
+		91DFA2AA22A0FAE8009F3F8D /* router */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2B522A0FFC0009F3F8D /* PaySlipRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		91DFA2AB22A0FAEA009F3F8D /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2B322A0FF9F009F3F8D /* PaySlipInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		91DFA2AC22A0FAEC009F3F8D /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2B122A0FF8E009F3F8D /* PaySlipPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		91DFA2AD22A0FAED009F3F8D /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2AF22A0FF67009F3F8D /* PaySlipProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		91DFA2AE22A0FAF1009F3F8D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				915A8CAD229E6FFC00B5E492 /* PaySlipView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		91DFA2B722A12108009F3F8D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2B822A121F1009F3F8D /* Database.swift */,
+				91DFA2BA22A12DCB009F3F8D /* DatabaseController.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		91DFA2BC22A1938B009F3F8D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2C122A193C7009F3F8D /* Profile View */,
+				91DFA2C022A193C6009F3F8D /* Profile Interactor */,
+				91DFA2BF22A193C4009F3F8D /* Profile Presenter */,
+				91DFA2BE22A193C3009F3F8D /* Profile Protocol */,
+				91DFA2BD22A193C0009F3F8D /* Profile Router */,
+			);
+			name = Profile;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		91DFA2BD22A193C0009F3F8D /* Profile Router */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2C822A1951B009F3F8D /* Profile Router.swift */,
+			);
+			path = "Profile Router";
+			sourceTree = "<group>";
+		};
+		91DFA2BE22A193C3009F3F8D /* Profile Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2C622A1950A009F3F8D /* Profile Protocol.swift */,
+			);
+			path = "Profile Protocol";
+			sourceTree = "<group>";
+		};
+		91DFA2BF22A193C4009F3F8D /* Profile Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2C422A194AE009F3F8D /* Profile Presenter.swift */,
+			);
+			path = "Profile Presenter";
+			sourceTree = "<group>";
+		};
+		91DFA2C022A193C6009F3F8D /* Profile Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2C222A19499009F3F8D /* Profile Interactor.swift */,
+			);
+			path = "Profile Interactor";
+			sourceTree = "<group>";
+		};
+		91DFA2C122A193C7009F3F8D /* Profile View */ = {
+			isa = PBXGroup;
+			children = (
+				915E1510229501960049A17C /* Profile.swift */,
+			);
+			path = "Profile View";
+			sourceTree = "<group>";
+		};
+		91DFA2CA22A283F9009F3F8D /* People */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2CD22A2841A009F3F8D /* People Router */,
+				91DFA2CF22A2841E009F3F8D /* People Presenter */,
+				91DFA2CE22A2841C009F3F8D /* People interactor */,
+				91DFA2CC22A28418009F3F8D /* People Protocol */,
+				91DFA2CB22A28416009F3F8D /* People View */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		91DFA2CB22A28416009F3F8D /* People View */ = {
+			isa = PBXGroup;
+			children = (
+				915E151722956E150049A17C /* People.swift */,
+			);
+			path = "People View";
+			sourceTree = "<group>";
+		};
+		91DFA2CC22A28418009F3F8D /* People Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2D622A285B3009F3F8D /* PeopleProtocol.swift */,
+			);
+			path = "People Protocol";
+			sourceTree = "<group>";
+		};
+		91DFA2CD22A2841A009F3F8D /* People Router */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2D022A28568009F3F8D /* PeopleRouter.swift */,
+			);
+			path = "People Router";
+			sourceTree = "<group>";
+		};
+		91DFA2CE22A2841C009F3F8D /* People interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2D422A285A7009F3F8D /* PeopleInteractor.swift */,
+			);
+			path = "People interactor";
+			sourceTree = "<group>";
+		};
+		91DFA2CF22A2841E009F3F8D /* People Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2D222A28574009F3F8D /* PeoplePresenter.swift */,
+			);
+			path = "People Presenter";
+			sourceTree = "<group>";
+		};
+		91DFA2D822A52C1F009F3F8D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2DE22A52C98009F3F8D /* Insurance View */,
+				91DFA2DD22A52C96009F3F8D /* Insuracne Presenter */,
+				91DFA2DC22A52C94009F3F8D /* Insurance  proctocol */,
+				91DFA2DB22A52C92009F3F8D /* Insurance interactor */,
+				91DFA2DA22A52C25009F3F8D /* Insurance Router */,
+			);
+			name = "New Group";
+			path = Insurance;
+			sourceTree = "<group>";
+		};
+		91DFA2D922A52C21009F3F8D /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				913C8B0D22B74C430086A5AD /* Notification Presenter */,
+				913C8B0C22B74C410086A5AD /* Notification View */,
+				913C8B0B22B74C3F0086A5AD /* Notification Interactor */,
+				913C8B0A22B74C3E0086A5AD /* Notification Protocol */,
+				913C8B0922B74C3C0086A5AD /* Notification Router */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		91DFA2DA22A52C25009F3F8D /* Insurance Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Insurance Router";
+			sourceTree = "<group>";
+		};
+		91DFA2DB22A52C92009F3F8D /* Insurance interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Insurance interactor";
+			sourceTree = "<group>";
+		};
+		91DFA2DC22A52C94009F3F8D /* Insurance  proctocol */ = {
+			isa = PBXGroup;
+			children = (
+				91DFA2DF22A52EA7009F3F8D /* InsuranceProtocol.swift */,
+			);
+			path = "Insurance  proctocol";
+			sourceTree = "<group>";
+		};
+		91DFA2DD22A52C96009F3F8D /* Insuracne Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Insuracne Presenter";
+			sourceTree = "<group>";
+		};
+		91DFA2DE22A52C98009F3F8D /* Insurance View */ = {
+			isa = PBXGroup;
+			children = (
+				91D2479A22B0CBC700FDB7CA /* Insurance.swift */,
+			);
+			path = "Insurance View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		915E14EA2293D2F20049A17C /* HRMgmt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 915E14FD2293D2F40049A17C /* Build configuration list for PBXNativeTarget "HRMgmt" */;
+			buildPhases = (
+				915E14E72293D2F20049A17C /* Sources */,
+				915E14E82293D2F20049A17C /* Frameworks */,
+				915E14E92293D2F20049A17C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HRMgmt;
+			productName = HRMgmt;
+			productReference = 915E14EB2293D2F20049A17C /* HRMgmt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		915E14E32293D2F20049A17C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "vel-pt2332";
+				TargetAttributes = {
+					915E14EA2293D2F20049A17C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 915E14E62293D2F20049A17C /* Build configuration list for PBXProject "HRMgmt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 915E14E22293D2F20049A17C;
+			productRefGroup = 915E14EC2293D2F20049A17C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				915E14EA2293D2F20049A17C /* HRMgmt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		915E14E92293D2F20049A17C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				913BA68422C0ECAC00444D9C /* loading.gif in Resources */,
+				915E14F92293D2F40049A17C /* LaunchScreen.storyboard in Resources */,
+				915E14F62293D2F40049A17C /* Assets.xcassets in Resources */,
+				915E14F42293D2F20049A17C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		915E14E72293D2F20049A17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DFA2B222A0FF8E009F3F8D /* PaySlipPresenter.swift in Sources */,
+				91D2475122AE23A200FDB7CA /* FilesView.swift in Sources */,
+				91D2470E22A923C400FDB7CA /* Holiday.swift in Sources */,
+				918E2B3722B357DC00688B05 /* SingleTaskView.swift in Sources */,
+				918E2B3222B12B4B00688B05 /* AttendanceDayProtocol.swift in Sources */,
+				913C8B1322B789280086A5AD /* SingleTaskInteractor.swift in Sources */,
+				91D2476522AE849F00FDB7CA /* PerformanceMainProtocol.swift in Sources */,
+				91D2474A22AE22D200FDB7CA /* ActivityIndicator.swift in Sources */,
+				915A8CA9229E6FC000B5E492 /* ApplyLeaveView.swift in Sources */,
+				911188AA229AF64F00BC64E3 /* Task.swift in Sources */,
+				913C8B2722B8B7540086A5AD /* QueryMainInteractor.swift in Sources */,
+				91DFA256229E80BD009F3F8D /* TabBarController.swift in Sources */,
+				91DFA2D322A28574009F3F8D /* PeoplePresenter.swift in Sources */,
+				91D2478422AFBCD600FDB7CA /* ShowNotification.swift in Sources */,
+				915A8CB6229E701C00B5E492 /* CreateQuery.swift in Sources */,
+				91D2472722AB6CC600FDB7CA /* TaskInteractor.swift in Sources */,
+				913BA68022C0E95B00444D9C /* gifExtension.swift in Sources */,
+				913C8B3722B8FBCC0086A5AD /* CreateQueryInteractor.swift in Sources */,
+				913C8B0F22B786A20086A5AD /* SingleTaskProtocol.swift in Sources */,
+				91DFA2C922A1951B009F3F8D /* Profile Router.swift in Sources */,
+				913BA68622C0FB5C00444D9C /* Downloader.swift in Sources */,
+				91D2476122AE844600FDB7CA /* PerformanceMainPresenter.swift in Sources */,
+				913C8B0822B6B99F0086A5AD /* PermissionRouter.swift in Sources */,
+				91DFA2D522A285A7009F3F8D /* PeopleInteractor.swift in Sources */,
+				913C8B4322B970780086A5AD /* SingleQueryInteractor.swift in Sources */,
+				91DFA2A6229FFC47009F3F8D /* performanceGiveInteractor.swift in Sources */,
+				91DFA28C229FB1B1009F3F8D /* LeaveTrackerRouter.swift in Sources */,
+				91DFA2A2229FFC17009F3F8D /* performanceGiveProtocol.swift in Sources */,
+				91DFA2D722A285B3009F3F8D /* PeopleProtocol.swift in Sources */,
+				91D2477E22AFA4AA00FDB7CA /* NotificationInteractor.swift in Sources */,
+				91DFA2B622A0FFC0009F3F8D /* PaySlipRouter.swift in Sources */,
+				91D247A122B0CC1200FDB7CA /* LoginPresenter.swift in Sources */,
+				913C8B3E22B9704D0086A5AD /* SingleQueryPresenter.swift in Sources */,
+				913C8B4522B970860086A5AD /* SingleQueryRouter.swift in Sources */,
+				91DFA2A4229FFC2F009F3F8D /* performanceGivePresenter.swift in Sources */,
+				91D2476E22AF794900FDB7CA /* MakeAnnouncmentPresenter.swift in Sources */,
+				91D2477C22AFA48000FDB7CA /* NotificationPresenter.swift in Sources */,
+				91D2472B22AB6CE500FDB7CA /* TaskProtocol.swift in Sources */,
+				91DFA2B022A0FF67009F3F8D /* PaySlipProtocol.swift in Sources */,
+				911188AC229AFCD500BC64E3 /* TaskCell.swift in Sources */,
+				913C8B1122B789030086A5AD /* SingleTaskPeresenter.swift in Sources */,
+				915E14F12293D2F20049A17C /* HomeMain.swift in Sources */,
+				91D2475322AE23C100FDB7CA /* PermissionView.swift in Sources */,
+				915A8CB0229E6FFC00B5E492 /* PaySlipView.swift in Sources */,
+				91DFA244229E7FE8009F3F8D /* Query.swift in Sources */,
+				913C8B3B22B8FBE90086A5AD /* CreateQueryRouter.swift in Sources */,
+				91D247AD22B0CCE000FDB7CA /* LoginInteractor.swift in Sources */,
+				91DFA27E229F8B6D009F3F8D /* AttendanceRouter.swift in Sources */,
+				91DFA278229EAC48009F3F8D /* AttendanceWeekProtocol.swift in Sources */,
+				915E1513229517A70049A17C /* ProfileCell.swift in Sources */,
+				91D2475922AE54C400FDB7CA /* PreformanceMain.swift in Sources */,
+				91D2476722AE84B200FDB7CA /* PerformanceMainRouter.swift in Sources */,
+				91DFA24C229E8011009F3F8D /* Employee.swift in Sources */,
+				913BA68A22C2342B00444D9C /* ShowNotificaionPresenter.swift in Sources */,
+				91D247A522B0CC2C00FDB7CA /* LoginRouter.swift in Sources */,
+				915E150922940FA10049A17C /* AttendanceWeek.swift in Sources */,
+				915E1511229501960049A17C /* Profile.swift in Sources */,
+				91D2478022AFA4BD00FDB7CA /* NotificationProtocol.swift in Sources */,
+				91DFA29A229FCCDF009F3F8D /* ApplyLeaveRouter.swift in Sources */,
+				91D2474C22AE22F200FDB7CA /* RatingControl.swift in Sources */,
+				915E15012293D9DE0049A17C /* Extensions.swift in Sources */,
+				91D2471C22AA72AA00FDB7CA /* HolidayRouter.swift in Sources */,
+				91DFA252229E8097009F3F8D /* PerformanceMainView.swift in Sources */,
+				91D2478222AFA7EC00FDB7CA /* NotificationRouter.swift in Sources */,
+				913C8B1722B7A24D0086A5AD /* SingleQueryView.swift in Sources */,
+				91D2477222AF797100FDB7CA /* MakeAnnouncementProtocol.swift in Sources */,
+				91D2479322B0C7D300FDB7CA /* CreateTaskProtocol.swift in Sources */,
+				91DFA2A8229FFC79009F3F8D /* performanceGiveRouter.swift in Sources */,
+				91DFA27C229F8B3E009F3F8D /* AttendancePresenter.swift in Sources */,
+				91D2477022AF795E00FDB7CA /* MakeAnnouncementInteractor.swift in Sources */,
+				913C8B2922B8B7620086A5AD /* QueryMainProtocol.swift in Sources */,
+				91DFA24F229E8011009F3F8D /* Notificaiton.swift in Sources */,
+				91D2479722B0C7F900FDB7CA /* CreateTaskPresenter.swift in Sources */,
+				91D2474E22AE230D00FDB7CA /* FeedBackView.swift in Sources */,
+				918E2B3522B1306800688B05 /* AttendanceDayRouter.swift in Sources */,
+				915A8CB2229E6FFC00B5E492 /* MakeAnnouncement.swift in Sources */,
+				913C8B2B22B8B78D0086A5AD /* QueryMainRouter.swift in Sources */,
+				91DFA246229E7FE8009F3F8D /* Tasks.swift in Sources */,
+				913BA68E22C2345200444D9C /* ShowNotificationProtocol.swift in Sources */,
+				913C8B3522B8FBBC0086A5AD /* CreateQueryPresenter.swift in Sources */,
+				913C8B2522B8B7420086A5AD /* QueryMainPresenter.swift in Sources */,
+				91DFA2E222A6286D009F3F8D /* pdf.swift in Sources */,
+				91DFA298229FCCCA009F3F8D /* ApplyLeavePresenter.swift in Sources */,
+				915E150B22941AB70049A17C /* AttendanceCell.swift in Sources */,
+				91D2471A22AA72A000FDB7CA /* HolidayInteractor.swift in Sources */,
+				91D2471822AA728F00FDB7CA /* HolidayPresenter.swift in Sources */,
+				91DFA286229FACF7009F3F8D /* LeaveTrackerProtocol.swift in Sources */,
+				913C8B6722BB60C50086A5AD /* HomeCollectionViewCell.swift in Sources */,
+				91DFA24E229E8011009F3F8D /* PaySlip.swift in Sources */,
+				91D2476322AE845900FDB7CA /* PerformanceMainInteractor.swift in Sources */,
+				912483F02297A4E900757F7C /* ServicesView.swift in Sources */,
+				91DFA2E022A52EA7009F3F8D /* InsuranceProtocol.swift in Sources */,
+				91D2479122B0C7C300FDB7CA /* CreateTaskRouter.swift in Sources */,
+				91DFA288229FB11B009F3F8D /* LeavePresenter.swift in Sources */,
+				91DFA243229E7FE8009F3F8D /* Permission.swift in Sources */,
+				91D247A322B0CC1E00FDB7CA /* LoginProtocol.swift in Sources */,
+				91DFA24D229E8011009F3F8D /* Leave.swift in Sources */,
+				91DFA2BB22A12DCB009F3F8D /* DatabaseController.swift in Sources */,
+				91D2479D22B0CBEE00FDB7CA /* LoginView.swift in Sources */,
+				91D2475722AE258400FDB7CA /* PerformanceCell.swift in Sources */,
+				91DFA261229E881D009F3F8D /* HomeInteractor.swift in Sources */,
+				913C8B4122B970690086A5AD /* SingleQueryProtocol.swift in Sources */,
+				915E151522951DF20049A17C /* employeeList.swift in Sources */,
+				915A8CB1229E6FFC00B5E492 /* NotificaitonView.swift in Sources */,
+				91DFA2D122A28568009F3F8D /* PeopleRouter.swift in Sources */,
+				91DFA25F229E87E4009F3F8D /* HomePresenter.swift in Sources */,
+				915E150E22941AE50049A17C /* AttendanceDay.swift in Sources */,
+				913C8B0422B6B9830086A5AD /* PermissionInteractor.swift in Sources */,
+				915A8CAB229E6FC000B5E492 /* LeaveTracker.swift in Sources */,
+				915A8CB5229E701C00B5E492 /* QueryView.swift in Sources */,
+				913C8B1522B789380086A5AD /* SingleTaskRouter.swift in Sources */,
+				915E151B22965B8C0049A17C /* iconsView.swift in Sources */,
+				91D2479B22B0CBC700FDB7CA /* Insurance.swift in Sources */,
+				91DFA2C322A19499009F3F8D /* Profile Interactor.swift in Sources */,
+				913BA69222C3475000444D9C /* TextView.swift in Sources */,
+				915E14EF2293D2F20049A17C /* AppDelegate.swift in Sources */,
+				91D2472922AB6CD300FDB7CA /* TaskRouter.swift in Sources */,
+				918E2B3022B12B3A00688B05 /* AttendanceDayInteractor.swift in Sources */,
+				91DFA250229E8011009F3F8D /* Department.swift in Sources */,
+				911188A8229AF06E00BC64E3 /* CreateTask.swift in Sources */,
+				913C8B3922B8FBDA0086A5AD /* CreateQueryProtocol.swift in Sources */,
+				91DFA2B422A0FF9F009F3F8D /* PaySlipInteractor.swift in Sources */,
+				915E151822956E150049A17C /* People.swift in Sources */,
+				91DFA28A229FB162009F3F8D /* LeaveInteractor.swift in Sources */,
+				912483F622986C1000757F7C /* tableAnimation.swift in Sources */,
+				91D2473622AE1BEA00FDB7CA /* ServicesProtocol.swift in Sources */,
+				913C8B0222B6B9760086A5AD /* PermissionPresenter.swift in Sources */,
+				91D2473822AE1BF900FDB7CA /* ServicesPresenter.swift in Sources */,
+				91DFA2C522A194AE009F3F8D /* Profile Presenter.swift in Sources */,
+				91DFA2C722A1950A009F3F8D /* Profile Protocol.swift in Sources */,
+				913BA68C22C2343C00444D9C /* ShowNotificationInteractor.swift in Sources */,
+				91D2477422AF798000FDB7CA /* MakeAnnouncementRouter.swift in Sources */,
+				91DFA294229FCC9F009F3F8D /* ApplyLeaveProtocol.swift in Sources */,
+				918E2B2E22B12AFA00688B05 /* AttendanceDayPresenter.swift in Sources */,
+				91DFA25D229E83BB009F3F8D /* HomeProtocol.swift in Sources */,
+				913BA69022C249E200444D9C /* ShowNotificationRouter.swift in Sources */,
+				91D2472522AB6C2500FDB7CA /* TaskPresenter.swift in Sources */,
+				91D2479522B0C7E400FDB7CA /* CreateTaskInteractor.swift in Sources */,
+				91D2475522AE23D500FDB7CA /* DownloadCell.swift in Sources */,
+				91D2471622AA70D800FDB7CA /* HolidayProtocol.swift in Sources */,
+				91DFA242229E7FE8009F3F8D /* Performance.swift in Sources */,
+				91DFA296229FCCB9009F3F8D /* ApplyLeaveInteractor.swift in Sources */,
+				91D2473E22AE223600FDB7CA /* DateController.swift in Sources */,
+				91DFA245229E7FE8009F3F8D /* QueryReplies.swift in Sources */,
+				913C8B0622B6B98F0086A5AD /* PermissionProtocol.swift in Sources */,
+				91D2473A22AE1C0A00FDB7CA /* Services Router.swift in Sources */,
+				913BA68822C1D61700444D9C /* AttendancePopup.swift in Sources */,
+				915A8CCB229E7FCB00B5E492 /* Tasks.swift in Sources */,
+				91DFA27A229EAFE7009F3F8D /* AttendacneWeekInteractor.swift in Sources */,
+				91DFA2B922A121F1009F3F8D /* Database.swift in Sources */,
+				91DFA263229E88B8009F3F8D /* HomeRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		915E14F22293D2F20049A17C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				915E14F32293D2F20049A17C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		915E14F72293D2F40049A17C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				915E14F82293D2F40049A17C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		915E14FB2293D2F40049A17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		915E14FC2293D2F40049A17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		915E14FE2293D2F40049A17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sathish Rajagopalan (8NTHH93E28)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R4F89R73A4;
+				INFOPLIST_FILE = HRMgmt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtouch.demo.peopleapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Demo App People App";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		915E14FF2293D2F40049A17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sathish Rajagopalan (8NTHH93E28)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R4F89R73A4;
+				INFOPLIST_FILE = HRMgmt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vtouch.demo.peopleapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Demo App People App";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		915E14E62293D2F20049A17C /* Build configuration list for PBXProject "HRMgmt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				915E14FB2293D2F40049A17C /* Debug */,
+				915E14FC2293D2F40049A17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		915E14FD2293D2F40049A17C /* Build configuration list for PBXNativeTarget "HRMgmt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				915E14FE2293D2F40049A17C /* Debug */,
+				915E14FF2293D2F40049A17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 915E14E32293D2F20049A17C /* Project object */;
+}
